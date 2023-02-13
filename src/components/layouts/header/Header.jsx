@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={styles["header-container"]}>
       <div className={styles["logo"]}>
-        <span>
+        <span className={styles["logo-container"]}>
           <img
             alt="Jupiter-logo-image"
             src={jupiter}

@@ -5,10 +5,12 @@ import DiscImage from "../../assets/lower-size-img.jpg";
 import testimonialImage from "../../assets/testimonial-img-1.jpg";
 import opportunities from "../../assets/opportunities.jpg";
 import exploration from "../../assets/exploration.jpg";
-import infoShare from "../../assets/info-sharing.png";
+import infoShare from "../../assets/info-sharing-compressed2.jpg";
 import networking from "../../assets/networking2.jpg";
 import inspireOthers from "../../assets/inspiration.jpg";
 import Footer from "../../components/layouts/footer/Footer";
+import { IconContext } from "react-icons";
+import { RxDoubleArrowRight } from "react-icons/rx";
 
 const Home = () => {
   return (
@@ -60,7 +62,7 @@ const Home = () => {
           </div>
         </section>
         <div className={styles["key-benefits-container"]}>
-          <h2>Key benefits you won't want to miss out</h2>
+          <h2>Key benefits you won't want to miss</h2>
         </div>
 
         {/* <section className={styles["card-container"]}>
@@ -194,35 +196,59 @@ const Home = () => {
             <ImageSlider effectDelay={500} autoPlayDelay={1500}>
               <Slide>
                 <figure className={styles["chair"]}>
-                  <img src={opportunities} alt="Big men from TotalEnergies" />
+                  <img
+                    src={opportunities}
+                    alt="Big men from TotalEnergies"
+                    className={styles["opportunities"]}
+                  />
                   <div className={styles["chair-box"]}>
-                    <h3>Opportunities</h3>
-                    <ul className={styles["chair-details"]}>
-                      <li>
-                        <span>Job opportunities</span>
-                      </li>
-                      <li>
-                        <span>Internship opportunities</span>
-                      </li>
-                      <li>
-                        <span>Scholarship opportunities</span>
-                      </li>
-                      <li>
-                        <span>Exploration opportunities</span>
-                      </li>
-                    </ul>
+                    <div className={styles["chair-box-child"]}>
+                      <h3>Opportunities</h3>
+                      <ul className={styles["chair-details"]}>
+                        <li>
+                          <span>Job opportunities</span>
+                        </li>
+                        <li>
+                          <span>Internship opportunities</span>
+                        </li>
+                        <li>
+                          <span>Scholarship opportunities</span>
+                        </li>
+                        <li>
+                          <span>Exploration opportunities</span>
+                        </li>
 
-                    <div className={styles["chair-price"]}>
-                      <button className={styles["btn btn-small"]}>
-                        Read more
-                      </button>
+                        <div className={styles["chair-price"]}>
+                          <a href="#" className={styles["link-small"]}>
+                            <div>
+                              <p>Read more</p>
+                            </div>
+                            <div className={styles["read-more-container"]}>
+                              <IconContext.Provider
+                                value={{
+                                  color: "var(--color-primary)",
+                                  className: "global-class-name",
+                                }}
+                              >
+                                <div className={styles["read-more-icon"]}>
+                                  <RxDoubleArrowRight />
+                                </div>
+                              </IconContext.Provider>
+                            </div>
+                          </a>
+                        </div>
+                      </ul>
                     </div>
                   </div>
                 </figure>
               </Slide>
               <Slide>
                 <figure className={styles["chair"]}>
-                  <img src={exploration} alt="Doru Winnie" />
+                  <img
+                    src={exploration}
+                    alt="Doru Winnie"
+                    className={styles["exploration"]}
+                  />
                   <div className={styles["chair-box"]}>
                     <h3>Exploration</h3>
                     <ul className={styles["chair-details"]}>
@@ -238,19 +264,36 @@ const Home = () => {
                       <li>
                         <span>Local tour programs</span>
                       </li>
+                      <div className={styles["chair-price"]}>
+                        <a href="#" className={styles["link-small"]}>
+                          <div>
+                            <p>Read more</p>
+                          </div>
+                          <div className={styles["read-more-container"]}>
+                            <IconContext.Provider
+                              value={{
+                                color: "var(--color-primary)",
+                                className: "global-class-name",
+                              }}
+                            >
+                              <div className={styles["read-more-icon"]}>
+                                <RxDoubleArrowRight />
+                              </div>
+                            </IconContext.Provider>
+                          </div>
+                        </a>
+                      </div>
                     </ul>
-
-                    <div className={styles["chair-price"]}>
-                      <button className={styles["btn btn-small"]}>
-                        Read more
-                      </button>
-                    </div>
                   </div>
                 </figure>
               </Slide>
               <Slide>
                 <figure className={styles["chair"]}>
-                  <img src={infoShare} alt="Emmanuella" />
+                  <img
+                    src={infoShare}
+                    alt="Emmanuella"
+                    className={styles["info-share"]}
+                  />
                   <div className={styles["chair-box"]}>
                     <h3>Information Sharing</h3>
                     <ul className={styles["chair-details"]}>
@@ -266,13 +309,26 @@ const Home = () => {
                       <li>
                         <span>Important functions</span>
                       </li>
+                      <div className={styles["chair-price"]}>
+                        <a href="#" className={styles["link-small"]}>
+                          <div>
+                            <p>Read more</p>
+                          </div>
+                          <div className={styles["read-more-container"]}>
+                            <IconContext.Provider
+                              value={{
+                                color: "var(--color-primary)",
+                                className: "global-class-name",
+                              }}
+                            >
+                              <div className={styles["read-more-icon"]}>
+                                <RxDoubleArrowRight />
+                              </div>
+                            </IconContext.Provider>
+                          </div>
+                        </a>
+                      </div>
                     </ul>
-
-                    <div className={styles["chair-price"]}>
-                      <button className={styles["btn btn-small"]}>
-                        Read more
-                      </button>
-                    </div>
                   </div>
                 </figure>
               </Slide>
@@ -281,6 +337,7 @@ const Home = () => {
                   <img
                     src={inspireOthers}
                     alt="Emmanuella inspiring the younger generation"
+                    className={styles["inspire-others"]}
                   />
                   <div className={styles["chair-box"]}>
                     <h3>Inspiring Others</h3>
@@ -291,19 +348,36 @@ const Home = () => {
                           person in the image above is doing exactly that.
                         </span>
                       </li>
+                      <div className={styles["chair-price"]}>
+                        <a href="#" className={styles["link-small"]}>
+                          <div>
+                            <p>Read more</p>
+                          </div>
+                          <div className={styles["read-more-container"]}>
+                            <IconContext.Provider
+                              value={{
+                                color: "var(--color-primary)",
+                                className: "global-class-name",
+                              }}
+                            >
+                              <div className={styles["read-more-icon"]}>
+                                <RxDoubleArrowRight />
+                              </div>
+                            </IconContext.Provider>
+                          </div>
+                        </a>
+                      </div>
                     </ul>
-
-                    <div className={styles["chair-price"]}>
-                      <button className={styles["btn btn-small"]}>
-                        Read more
-                      </button>
-                    </div>
                   </div>
                 </figure>
               </Slide>
               <Slide>
                 <figure className={styles["chair"]}>
-                  <img src={networking} alt="Networking with others" />
+                  <img
+                    src={networking}
+                    alt="Networking with others"
+                    className={styles["networking"]}
+                  />
                   <div className={styles["chair-box"]}>
                     <h3>Networking</h3>
                     <ul className={styles["chair-details"]}>
@@ -314,13 +388,26 @@ const Home = () => {
                           depending on how much blessed this becomes.{" "}
                         </span>
                       </li>
+                      <div className={styles["chair-price"]}>
+                        <a href="#" className={styles["link-small"]}>
+                          <div>
+                            <p>Read more</p>
+                          </div>
+                          <div className={styles["read-more-container"]}>
+                            <IconContext.Provider
+                              value={{
+                                color: "var(--color-primary)",
+                                className: "global-class-name",
+                              }}
+                            >
+                              <div className={styles["read-more-icon"]}>
+                                <RxDoubleArrowRight />
+                              </div>
+                            </IconContext.Provider>
+                          </div>
+                        </a>
+                      </div>
                     </ul>
-
-                    <div className={styles["chair-price"]}>
-                      <button className={styles["btn btn-small"]}>
-                        Read more
-                      </button>
-                    </div>
                   </div>
                 </figure>
               </Slide>

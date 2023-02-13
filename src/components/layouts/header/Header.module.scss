@@ -13,8 +13,14 @@
   justify-content: space-between;
 }
 .jupiter-logo-img {
+  display: flex;
+  justify-content: center;
   align-self: center;
   height: 5rem;
+}
+.logo-container {
+  margin-left: 3rem;
+  // background-color: red;
 }
 .page-title {
   margin-left: 7rem;
@@ -24,7 +30,7 @@
 }
 .header-buttons {
   display: flex;
-  margin-left: 50rem;
+  margin-left: 45rem;
 }
 .login-btn {
   align-self: center;

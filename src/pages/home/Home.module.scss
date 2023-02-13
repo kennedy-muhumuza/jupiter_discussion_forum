@@ -1,6 +1,6 @@
 .home-page-container {
   background-color: var(--color-grey-light-3);
-  width: 65%;
+  width: 80%;
   max-height: 1000vh;
   color: var(--color-grey-dark-3);
   position: relative;
@@ -12,6 +12,7 @@
 }
 body {
 }
+
 .border-line {
   border-bottom: solid#000;
   width: 10rem;
@@ -97,26 +98,45 @@ body {
   // display: grid;
   // grid-template-columns: repeat(3, 1fr);
   // column-gap: 50px;
+  // width: 40rem;
   width: 100%;
+  // background-color: green;
+  // height: 22rem;
 }
 
 /* CHAIRS */
 .chair {
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
   border-radius: 0.8rem;
-  width: 17rem;
+  // background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 32rem;
+  margin-left: 26rem;
+  // margin-bottom: 40rem;
+  // width: ;
+  // height: 17rem;
+  // display: flex;
+  // flex-direction: column;
   img {
-    width: 17rem;
-    height: 15rem;
+    // width: 30%;
+    height: 20rem;
     border-radius: 0.8rem;
   }
 }
+
 .chair img {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  // border-top-right-radius: 0;
+  // height: 100%;
 }
 .chair-box {
-  padding: 32px;
+  // padding: 32px;
+  height: 15rem;
+  // background-color: green;
 }
 
 h3 {
@@ -133,7 +153,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 30rem;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .chair-details li:last-child {
@@ -144,10 +164,36 @@ h3 {
 }
 
 .chair-price {
-  display: flex;
+  // display: flex;
   // justify-content: space-between;
-  gap: 1rem;
-  font-size: 20px;
+  // gap: 1rem;
+  // background-color: red;
+  // font-size: 20px;
+  .btn-small {
+    // background-color: #c3fae8;
+    // background-color: #fff;
+    // border: solid var(--color-primary);
+    // color: red;
+  }
+}
+.link-small {
+  display: flex;
+  // background-color: red;
+  gap: 0.5rem;
+}
+.read-more-icon {
+  // background-color: red;
+  // margin-bottom: 0;
+  margin-top: 0.2rem;
+}
+.read-more-container {
+  // background-color: green;
+  display: flex;
+  // align-self: center;
+  // justify-content: center;
+}
+.global-class-name {
+  // background-color: black;
 }
 
 .key-benefits-container {
@@ -159,13 +205,34 @@ h3 {
 .card-container {
   margin-top: 2rem;
   // background-color: red;
-  width: 20%;
-  margin-left: 30rem;
+  // background-color: blue;
+  width: 100%;
+
+  // margin-left: 10rem;
   max-height: 100vh;
   // height: 20rem;
   display: flex;
-  gap: 30rem;
-  align-items: end;
-  // justify-content: center;
-  margin-bottom: 4rem;
+  // gap: 30rem;
+  align-items: center;
+  justify-content: center;
+  // margin-bottom: 4rem;
+}
+.chair-box-child {
+  height: auto;
+}
+// IMAGES
+.opportunities {
+  // height: 20rem;
+}
+.exploration {
+  // height: 20rem;
+}
+.info-share {
+  // height: 20rem;
+}
+.inspire-others {
+  // height: 20rem;
+}
+.networking {
+  // height: 20rem;
 }
