@@ -134,7 +134,7 @@ body {
   // height: 100%;
 }
 .chair-box {
-  // padding: 32px;
+  padding: 0.5rem 0.5rem;
   height: 15rem;
   // background-color: green;
 }
@@ -235,4 +235,12 @@ h3 {
 }
 .networking {
   // height: 20rem;
+}
+.inspiring-others-container {
+  display: flex;
+  gap: 1rem;
+}
+.networking-container {
+  display: flex;
+  gap: 1rem;
 }

@@ -11,6 +11,20 @@ import inspireOthers from "../../assets/inspiration.jpg";
 import Footer from "../../components/layouts/footer/Footer";
 import { IconContext } from "react-icons";
 import { RxDoubleArrowRight } from "react-icons/rx";
+import { SiGooglescholar } from "react-icons/si";
+import { BsFillArrowDownLeftCircleFill } from "react-icons/bs";
+import { RiMoneyPoundBoxFill } from "react-icons/ri";
+import { BsFillCloudSunFill } from "react-icons/bs";
+import { GiFallingRocks } from "react-icons/gi";
+import { FaBook } from "react-icons/fa";
+import { AiFillFileWord } from "react-icons/ai";
+import { MdTour } from "react-icons/md";
+import { RiComputerFill } from "react-icons/ri";
+import { AiFillProject } from "react-icons/ai";
+import { MdAssignment } from "react-icons/md";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { GiInspiration } from "react-icons/gi";
+import { SiHandshake } from "react-icons/si";
 
 const Home = () => {
   return (
@@ -24,9 +38,9 @@ const Home = () => {
             <span className={styles["border-line"]}></span>
             <p className={styles["paragraph-one"]}>
               Where we connect and share useful information. It is an academic
-              forum with charts, quizzes, blogs and various relevant information
-              on ongoing opportunities in the Oil and gas industry as well
-              communication for constant connectivity.{" "}
+              forum with real-time charts, quizzes, blogs and various relevant
+              information on ongoing opportunities in the Oil and gas industry
+              as well communication for constant connectivity.{" "}
             </p>
             <button className={styles["join-us-btn"]}>Join us</button>
           </div>
@@ -206,16 +220,28 @@ const Home = () => {
                       <h3>Opportunities</h3>
                       <ul className={styles["chair-details"]}>
                         <li>
-                          <span>Job opportunities</span>
+                          <span>
+                            {" "}
+                            <RiMoneyPoundBoxFill /> &nbsp; Job opportunities
+                          </span>
                         </li>
                         <li>
-                          <span>Internship opportunities</span>
+                          <span>
+                            {" "}
+                            <BsFillArrowDownLeftCircleFill />
+                            &nbsp; Internship opportunities
+                          </span>
                         </li>
                         <li>
-                          <span>Scholarship opportunities</span>
+                          <span>
+                            <SiGooglescholar /> &nbsp; Scholarship opportunities
+                          </span>
                         </li>
                         <li>
-                          <span>Exploration opportunities</span>
+                          <span>
+                            <BsFillCloudSunFill /> &nbsp; Exploration
+                            opportunities
+                          </span>
                         </li>
 
                         <div className={styles["chair-price"]}>
@@ -253,16 +279,24 @@ const Home = () => {
                     <h3>Exploration</h3>
                     <ul className={styles["chair-details"]}>
                       <li>
-                        <span>Geological trips</span>
+                        <span>
+                          <GiFallingRocks /> &nbsp; Geological trips
+                        </span>
                       </li>
                       <li>
-                        <span>Important research programs</span>
+                        <span>
+                          <FaBook /> &nbsp; Important research programs
+                        </span>
                       </li>
                       <li>
-                        <span>Report writing</span>
+                        <span>
+                          <AiFillFileWord /> &nbsp; Report writing
+                        </span>
                       </li>
                       <li>
-                        <span>Local tour programs</span>
+                        <span>
+                          <MdTour /> &nbsp; Local tour programs
+                        </span>
                       </li>
                       <div className={styles["chair-price"]}>
                         <a href="#" className={styles["link-small"]}>
@@ -298,16 +332,25 @@ const Home = () => {
                     <h3>Information Sharing</h3>
                     <ul className={styles["chair-details"]}>
                       <li>
-                        <span>Software skills like ArcGIS and petrel</span>
+                        <span>
+                          <RiComputerFill /> &nbsp; Software skills like ArcGIS
+                          and petrel
+                        </span>
                       </li>
                       <li>
-                        <span>Project designs</span>
+                        <span>
+                          <AiFillProject /> &nbsp; Project designs
+                        </span>
                       </li>
                       <li>
-                        <span>Assignment hustles</span>
+                        <span>
+                          <MdAssignment /> &nbsp; Assignment hustles
+                        </span>
                       </li>
                       <li>
-                        <span>Important functions</span>
+                        <span>
+                          <BsFillPeopleFill /> &nbsp; Important functions
+                        </span>
                       </li>
                       <div className={styles["chair-price"]}>
                         <a href="#" className={styles["link-small"]}>
@@ -343,15 +386,20 @@ const Home = () => {
                     <h3>Inspiring Others</h3>
                     <ul className={styles["chair-details"]}>
                       <li>
-                        <span>
-                          Inspiring the younger generation For example the
-                          person in the image above is doing exactly that.
+                        <span className={styles["inspiring-others-container"]}>
+                          <div>
+                            <GiInspiration />
+                          </div>
+                          <p>
+                            Inspiring the younger generation For example the
+                            person in the image above is doing exactly that.
+                          </p>
                         </span>
                       </li>
                       <div className={styles["chair-price"]}>
                         <a href="#" className={styles["link-small"]}>
                           <div>
-                            <p>Read more</p>
+                            <p>&nbsp; &nbsp; &nbsp; &nbsp; Read more</p>
                           </div>
                           <div className={styles["read-more-container"]}>
                             <IconContext.Provider
@@ -382,16 +430,21 @@ const Home = () => {
                     <h3>Networking</h3>
                     <ul className={styles["chair-details"]}>
                       <li>
-                        <span>
-                          Meeting Important people in the Industry either
-                          physically or even online like on this platform
-                          depending on how much blessed this becomes.{" "}
+                        <span className={styles["networking-container"]}>
+                          <div>
+                            <SiHandshake />
+                          </div>
+                          <p>
+                            Meeting Important people in the Industry either
+                            physically or even online like on this platform
+                            depending on how much blessed this becomes.{" "}
+                          </p>
                         </span>
                       </li>
                       <div className={styles["chair-price"]}>
                         <a href="#" className={styles["link-small"]}>
                           <div>
-                            <p>Read more</p>
+                            <p>&nbsp; &nbsp; &nbsp; &nbsp; Read more</p>
                           </div>
                           <div className={styles["read-more-container"]}>
                             <IconContext.Provider
