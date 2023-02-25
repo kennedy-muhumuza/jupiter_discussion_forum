@@ -1,6 +1,7 @@
 import React from "react";
 import jupiter from "../../../assets/primary-color-match.png";
 import styles from "./Header.module.scss";
+// import Menu from "../../UI/menu/Menu";
 
 const Header = () => {
   return (

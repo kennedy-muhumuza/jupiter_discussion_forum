@@ -6,15 +6,16 @@
   background-color: #fff;
   display: flex;
   box-shadow: var(--shadow-dark);
+  // background-color: green;
 }
 .logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 .jupiter-logo-img {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-self: center;
   height: 5rem;
 }
@@ -30,7 +31,14 @@
 }
 .header-buttons {
   display: flex;
-  margin-left: 45rem;
+  // margin-left: 45rem;
+  // background-color: red;
+  display: none;
+  // right: -5rem;
+  left: 40rem;
+  gap: 1rem;
+  // margin-left: 90%;
+  // margin-right: 0.03rem;
 }
 .login-btn {
   align-self: center;
@@ -48,7 +56,7 @@
 }
 .sign-up-btn {
   padding: 0.7rem 1.5rem;
-  margin: 0.8rem;
+  // margin: 0.8rem;
   align-self: center;
   background-color: var(--color-primary);
   transition: 0.2s;
@@ -57,4 +65,50 @@
   background-color: var(--color-primary-light);
   color: var(--color-grey-light-1);
   border: 0;
+}
+
+// ----------------------------
+// MEDIA QUERIES
+// ----------------------------
+
+@media screen and (1141px <= width <= 1420px) {
+  .logo-container {
+    margin-left: 3rem;
+    // background-color: red;
+  }
+  .page-title {
+    margin-left: 4rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-family: sans-serif;
+    // background-color: green;
+  }
+  .header-buttons {
+    display: flex;
+    // background-color: blue;
+    // margin-left: 45rem;
+    margin-left: 47%;
+  }
+}
+
+@media screen and (600px < width <= 1140px) {
+  .logo-container {
+    margin-left: 3rem;
+    background-color: red;
+  }
+  .page-title {
+    margin-left: 3.5rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-family: sans-serif;
+    // background-color: green;
+  }
+  .header-buttons {
+    display: flex;
+    // background-color: blue;
+    // margin-left: 45rem;
+    margin-left: 47%;
+  }
+}
+@media screen and (width <= 420px) {
 }

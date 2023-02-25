@@ -47,6 +47,12 @@ body {
   height: 100%;
   overflow-x: hidden;
   border-bottom: 8px solid#087f5b;
+  @media screen and (max-width: 600px) {
+    // font-weight: 10;
+    // background-color: red;
+    // padding: 0.65rem 3.2rem;
+    // overflow-x: hidden;
+  }
 }
 html {
   // font-size: 62.5%;
